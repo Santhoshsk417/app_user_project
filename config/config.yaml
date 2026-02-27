@@ -1,0 +1,18 @@
+data:
+  raw_path: "data/raw/app_user_behavior_dataset.csv"
+  processed_path: "data/processed/clustered_users.csv"
+  save_artifacts: true
+
+model:
+  name: "kmeans"
+  n_clusters: 4
+  random_state: 42
+
+preprocessing:
+  scaling: "standard"
+  pca_components: 2
+
+artifacts:
+  model_path: "artifacts/models/kmeans_model.pkl"
+  silhouette_path: "artifacts/reports/silhouette_score.txt"
+  summary_path: "artifacts/reports/cluster_summary.csv"

@@ -1,0 +1,105 @@
+2026-02-28 01:16:29,348 | __main__ | INFO | main.py:19 | Starting Clustering Pipeline...
+2026-02-28 01:16:29,456 | src.data.data_cleaning | INFO | data_cleaning.py:7 | starting data cleaning process....
+2026-02-28 01:16:29,467 | src.data.data_cleaning | INFO | data_cleaning.py:14 | Capping outliers using IQR...
+2026-02-28 01:16:29,637 | src.data.data_preprocessing | INFO | data_preprocessing.py:16 | starting data preprocessing......
+2026-02-28 01:16:31,706 | src.data.data_preprocessing | INFO | data_preprocessing.py:42 | Saving heatmap before drops to artifacts/reports/heatmap_before.png
+2026-02-28 01:16:31,753 | __main__ | INFO | main.py:34 | Data after preprocessing: (50000, 32)
+2026-02-28 01:16:31,754 | src.data.feature_scaling | INFO | feature_scaling.py:7 | Scaling features...
+2026-02-28 01:16:31,792 | src.data.feature_scaling | INFO | feature_scaling.py:17 | Feature scaling completed
+2026-02-28 01:16:31,793 | __main__ | INFO | main.py:38 | Data after scaling: (50000, 16)
+2026-02-28 01:16:31,793 | src.models.train | INFO | train.py:8 | initial kmeans
+2026-02-28 01:16:34,756 | src.models.train | INFO | train.py:13 | initiated succesfull
+2026-02-28 01:16:34,757 | src.models.cluster_labelling | INFO | cluster_labelling.py:5 | clustering 4 category
+2026-02-28 01:16:34,767 | src.models.cluster_labelling | INFO | cluster_labelling.py:14 | Cluster distribution:
+cluster
+3    15035
+0    12600
+1    11497
+2    10868
+Name: count, dtype: int64
+2026-02-28 01:16:34,769 | src.models.evaluate | INFO | evaluate.py:7 | evaluate silhouette score.....
+2026-02-28 01:20:11,831 | __main__ | INFO | main.py:19 | Starting Clustering Pipeline...
+2026-02-28 01:20:11,911 | src.data.data_cleaning | INFO | data_cleaning.py:7 | starting data cleaning process....
+2026-02-28 01:20:11,914 | src.data.data_cleaning | INFO | data_cleaning.py:14 | Capping outliers using IQR...
+2026-02-28 01:20:11,931 | src.data.data_cleaning | INFO | data_cleaning.py:26 | sessions_per_week: outliers capped
+2026-02-28 01:20:11,935 | src.data.data_cleaning | INFO | data_cleaning.py:26 | avg_session_duration_min: outliers capped
+2026-02-28 01:20:11,938 | src.data.data_cleaning | INFO | data_cleaning.py:26 | daily_active_minutes: outliers capped
+2026-02-28 01:20:11,942 | src.data.data_cleaning | INFO | data_cleaning.py:26 | feature_clicks_per_session: outliers capped
+2026-02-28 01:20:11,947 | src.data.data_cleaning | INFO | data_cleaning.py:26 | notifications_opened_per_week: outliers capped
+2026-02-28 01:20:11,950 | src.data.data_cleaning | INFO | data_cleaning.py:26 | in_app_search_count: outliers capped
+2026-02-28 01:20:11,956 | src.data.data_cleaning | INFO | data_cleaning.py:26 | crash_events_last_30_days: outliers capped
+2026-02-28 01:20:11,960 | src.data.data_cleaning | INFO | data_cleaning.py:26 | support_tickets_raised: outliers capped
+2026-02-28 01:20:11,965 | src.data.data_cleaning | INFO | data_cleaning.py:26 | ads_clicked_last_30_days: outliers capped
+2026-02-28 01:20:11,969 | src.data.data_cleaning | INFO | data_cleaning.py:26 | content_downloads: outliers capped
+2026-02-28 01:20:11,972 | src.data.data_cleaning | INFO | data_cleaning.py:26 | social_shares: outliers capped
+2026-02-28 01:20:11,976 | src.data.data_cleaning | INFO | data_cleaning.py:26 | rating_given: outliers capped
+2026-02-28 01:20:11,983 | src.data.data_cleaning | INFO | data_cleaning.py:26 | engagement_score: outliers capped
+2026-02-28 01:20:11,987 | src.data.data_cleaning | INFO | data_cleaning.py:26 | rating_missing_flag: outliers capped
+2026-02-28 01:20:11,987 | src.data.data_preprocessing | INFO | data_preprocessing.py:16 | starting data preprocessing......
+2026-02-28 01:20:13,235 | src.data.data_preprocessing | INFO | data_preprocessing.py:42 | Saving heatmap before drops to artifacts/reports/heatmap_before.png
+2026-02-28 01:20:13,272 | __main__ | INFO | main.py:34 | Data after preprocessing: (50000, 32)
+2026-02-28 01:20:13,272 | src.data.feature_scaling | INFO | feature_scaling.py:7 | Scaling features...
+2026-02-28 01:20:13,296 | src.data.feature_scaling | INFO | feature_scaling.py:17 | Feature scaling completed
+2026-02-28 01:20:13,297 | __main__ | INFO | main.py:38 | Data after scaling: (50000, 16)
+2026-02-28 01:20:13,297 | src.models.train | INFO | train.py:8 | initial kmeans
+2026-02-28 01:20:15,289 | src.models.train | INFO | train.py:13 | initiated succesfull
+2026-02-28 01:20:15,289 | __main__ | INFO | main.py:42 | KMeans clustering completed ✅
+2026-02-28 01:20:15,289 | src.models.cluster_labelling | INFO | cluster_labelling.py:5 | clustering 4 category
+2026-02-28 01:20:15,291 | src.models.cluster_labelling | INFO | cluster_labelling.py:13 | Cluster labeling successful ✅
+2026-02-28 01:20:15,292 | src.models.cluster_labelling | INFO | cluster_labelling.py:14 | Cluster distribution:
+cluster
+3    15035
+0    12600
+1    11497
+2    10868
+Name: count, dtype: int64
+2026-02-28 01:20:15,292 | __main__ | INFO | main.py:46 | Cluster labeling completed ✅
+2026-02-28 01:20:15,292 | src.models.evaluate | INFO | evaluate.py:7 | evaluate silhouette score.....
+2026-02-28 01:20:40,367 | src.models.evaluate | INFO | evaluate.py:10 | Silhouette Score: 0.0417
+2026-02-28 01:20:40,370 | __main__ | INFO | main.py:50 | Silhouette Score: 0.0417
+2026-02-28 01:20:40,374 | __main__ | INFO | model_registry.py:9 | Model saved to artifacts/models/kmeans_model.pkl
+2026-02-28 01:20:41,213 | __main__ | INFO | main.py:61 | Clustered data saved to data/processed/clustered_users.csv ✅
+2026-02-28 01:20:41,214 | __main__ | INFO | main.py:63 | Clustering pipeline finished successfully!
+2026-02-28 01:53:08,481 | __main__ | INFO | main.py:20 | Starting Clustering Pipeline...
+2026-02-28 01:53:08,552 | src.data.data_cleaning | INFO | data_cleaning.py:7 | starting data cleaning process....
+2026-02-28 01:53:08,557 | src.data.data_cleaning | INFO | data_cleaning.py:14 | Capping outliers using IQR...
+2026-02-28 01:53:08,573 | src.data.data_cleaning | INFO | data_cleaning.py:26 | sessions_per_week: outliers capped
+2026-02-28 01:53:08,576 | src.data.data_cleaning | INFO | data_cleaning.py:26 | avg_session_duration_min: outliers capped
+2026-02-28 01:53:08,580 | src.data.data_cleaning | INFO | data_cleaning.py:26 | daily_active_minutes: outliers capped
+2026-02-28 01:53:08,583 | src.data.data_cleaning | INFO | data_cleaning.py:26 | feature_clicks_per_session: outliers capped
+2026-02-28 01:53:08,587 | src.data.data_cleaning | INFO | data_cleaning.py:26 | notifications_opened_per_week: outliers capped
+2026-02-28 01:53:08,590 | src.data.data_cleaning | INFO | data_cleaning.py:26 | in_app_search_count: outliers capped
+2026-02-28 01:53:08,596 | src.data.data_cleaning | INFO | data_cleaning.py:26 | crash_events_last_30_days: outliers capped
+2026-02-28 01:53:08,599 | src.data.data_cleaning | INFO | data_cleaning.py:26 | support_tickets_raised: outliers capped
+2026-02-28 01:53:08,605 | src.data.data_cleaning | INFO | data_cleaning.py:26 | ads_clicked_last_30_days: outliers capped
+2026-02-28 01:53:08,609 | src.data.data_cleaning | INFO | data_cleaning.py:26 | content_downloads: outliers capped
+2026-02-28 01:53:08,612 | src.data.data_cleaning | INFO | data_cleaning.py:26 | social_shares: outliers capped
+2026-02-28 01:53:08,615 | src.data.data_cleaning | INFO | data_cleaning.py:26 | rating_given: outliers capped
+2026-02-28 01:53:08,622 | src.data.data_cleaning | INFO | data_cleaning.py:26 | engagement_score: outliers capped
+2026-02-28 01:53:08,626 | src.data.data_cleaning | INFO | data_cleaning.py:26 | rating_missing_flag: outliers capped
+2026-02-28 01:53:08,627 | src.data.data_preprocessing | INFO | data_preprocessing.py:16 | starting data preprocessing......
+2026-02-28 01:53:09,876 | src.data.data_preprocessing | INFO | data_preprocessing.py:42 | Saving heatmap before drops to artifacts/reports/heatmap_before.png
+2026-02-28 01:53:09,916 | __main__ | INFO | main.py:35 | Data after preprocessing: (50000, 32)
+2026-02-28 01:53:09,916 | src.data.feature_scaling | INFO | feature_scaling.py:7 | Scaling features...
+2026-02-28 01:53:09,945 | src.data.feature_scaling | INFO | feature_scaling.py:17 | Feature scaling completed
+2026-02-28 01:53:09,947 | __main__ | INFO | main.py:39 | Data after scaling: (50000, 16)
+2026-02-28 01:53:09,947 | src.models.train | INFO | train.py:8 | initial kmeans
+2026-02-28 01:53:12,014 | src.models.train | INFO | train.py:13 | initiated succesfull
+2026-02-28 01:53:12,014 | __main__ | INFO | main.py:43 | KMeans clustering completed ✅
+2026-02-28 01:53:12,015 | src.models.cluster_labelling | INFO | cluster_labelling.py:5 | clustering 4 category
+2026-02-28 01:53:12,018 | src.models.cluster_labelling | INFO | cluster_labelling.py:13 | Cluster labeling successful ✅
+2026-02-28 01:53:12,020 | src.models.cluster_labelling | INFO | cluster_labelling.py:14 | Cluster distribution:
+cluster
+3    15035
+0    12600
+1    11497
+2    10868
+Name: count, dtype: int64
+2026-02-28 01:53:12,020 | __main__ | INFO | main.py:47 | Cluster labeling completed ✅
+2026-02-28 01:53:12,020 | src.models.evaluate | INFO | evaluate.py:7 | evaluate silhouette score.....
+2026-02-28 01:53:34,615 | src.models.evaluate | INFO | evaluate.py:10 | Silhouette Score: 0.0417
+2026-02-28 01:53:34,616 | __main__ | INFO | main.py:51 | Silhouette Score: 0.0417
+2026-02-28 01:53:34,630 | __main__ | INFO | main.py:60 | PCA columns added to clustered data ✅
+2026-02-28 01:53:34,632 | __main__ | INFO | model_registry.py:9 | Model saved to artifacts/models/kmeans_model.pkl
+2026-02-28 01:53:35,483 | __main__ | INFO | main.py:72 | Clustered data saved to data/processed/clustered_users.csv ✅
+2026-02-28 01:53:35,483 | __main__ | INFO | main.py:74 | 🎉 Clustering pipeline finished successfully!
